@@ -1,0 +1,14 @@
+D:\Estudos\CSharp\calculoDeCombustivel\bin\Debug\net9.0\calculoDeCombustivel.exe
+D:\Estudos\CSharp\calculoDeCombustivel\bin\Debug\net9.0\calculoDeCombustivel.deps.json
+D:\Estudos\CSharp\calculoDeCombustivel\bin\Debug\net9.0\calculoDeCombustivel.runtimeconfig.json
+D:\Estudos\CSharp\calculoDeCombustivel\bin\Debug\net9.0\calculoDeCombustivel.dll
+D:\Estudos\CSharp\calculoDeCombustivel\bin\Debug\net9.0\calculoDeCombustivel.pdb
+D:\Estudos\CSharp\calculoDeCombustivel\obj\Debug\net9.0\calculoDeCombustivel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Estudos\CSharp\calculoDeCombustivel\obj\Debug\net9.0\calculoDeCombustivel.AssemblyInfoInputs.cache
+D:\Estudos\CSharp\calculoDeCombustivel\obj\Debug\net9.0\calculoDeCombustivel.AssemblyInfo.cs
+D:\Estudos\CSharp\calculoDeCombustivel\obj\Debug\net9.0\calculoDeCombustivel.csproj.CoreCompileInputs.cache
+D:\Estudos\CSharp\calculoDeCombustivel\obj\Debug\net9.0\calculoDeCombustivel.dll
+D:\Estudos\CSharp\calculoDeCombustivel\obj\Debug\net9.0\refint\calculoDeCombustivel.dll
+D:\Estudos\CSharp\calculoDeCombustivel\obj\Debug\net9.0\calculoDeCombustivel.pdb
+D:\Estudos\CSharp\calculoDeCombustivel\obj\Debug\net9.0\calculoDeCombustivel.genruntimeconfig.cache
+D:\Estudos\CSharp\calculoDeCombustivel\obj\Debug\net9.0\ref\calculoDeCombustivel.dll
