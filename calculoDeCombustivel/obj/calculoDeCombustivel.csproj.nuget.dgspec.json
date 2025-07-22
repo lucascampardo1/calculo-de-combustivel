@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Estudos\\CSharp\\calculoDeCombustivel\\calculoDeCombustivel.csproj": {}
+    "C:\\Users\\Lucas\\OneDrive\\Área de Trabalho\\repos\\calculoDeCombustivel\\calculoDeCombustivel\\calculoDeCombustivel\\calculoDeCombustivel.csproj": {}
   },
   "projects": {
-    "D:\\Estudos\\CSharp\\calculoDeCombustivel\\calculoDeCombustivel.csproj": {
+    "C:\\Users\\Lucas\\OneDrive\\Área de Trabalho\\repos\\calculoDeCombustivel\\calculoDeCombustivel\\calculoDeCombustivel\\calculoDeCombustivel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Estudos\\CSharp\\calculoDeCombustivel\\calculoDeCombustivel.csproj",
+        "projectUniqueName": "C:\\Users\\Lucas\\OneDrive\\Área de Trabalho\\repos\\calculoDeCombustivel\\calculoDeCombustivel\\calculoDeCombustivel\\calculoDeCombustivel.csproj",
         "projectName": "calculoDeCombustivel",
-        "projectPath": "D:\\Estudos\\CSharp\\calculoDeCombustivel\\calculoDeCombustivel.csproj",
+        "projectPath": "C:\\Users\\Lucas\\OneDrive\\Área de Trabalho\\repos\\calculoDeCombustivel\\calculoDeCombustivel\\calculoDeCombustivel\\calculoDeCombustivel.csproj",
         "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
-        "outputPath": "D:\\Estudos\\CSharp\\calculoDeCombustivel\\obj\\",
+        "outputPath": "C:\\Users\\Lucas\\OneDrive\\Área de Trabalho\\repos\\calculoDeCombustivel\\calculoDeCombustivel\\calculoDeCombustivel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
