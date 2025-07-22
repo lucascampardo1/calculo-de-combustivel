@@ -2,7 +2,6 @@
 {
     public static void Main(string[] args)
     {
-        static float combustivel(float gasolina, float etanol, string tipo) => tipo == "G" ? gasolina : etanol;
         static float indice(float gasolina, float etanol) => gasolina / etanol;
 
         Console.Write("Digite o valor da gasolina:");
