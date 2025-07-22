@@ -1,0 +1,52 @@
+@{
+    ViewData["Title"] = "Sobre";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow">
+            <div class="card-header bg-info text-white">
+                <h2 class="card-title mb-0">ℹ️ Sobre a Calculadora de Combustível</h2>
+            </div>
+            <div class="card-body">
+                <h5>Como funciona o cálculo?</h5>
+                <p>
+                    A calculadora utiliza uma regra simples e eficaz para determinar qual combustível é mais vantajoso:
+                </p>
+                
+                <div class="alert alert-light">
+                    <h6>Fórmula:</h6>
+                    <code>Índice = Preço da Gasolina ÷ Preço do Etanol</code>
+                </div>
+                
+                <h6>Interpretação do resultado:</h6>
+                <ul>
+                    <li><strong>Índice &lt; 0,7:</strong> 🌱 <span class="text-success">Etanol compensa mais!</span></li>
+                    <li><strong>Índice ≥ 0,7:</strong> ⛽ <span class="text-warning">Gasolina é mais vantajosa!</span></li>
+                </ul>
+                
+                <h5 class="mt-4">Por que 0,7?</h5>
+                <p>
+                    O etanol possui aproximadamente 30% menos energia que a gasolina. Isso significa que você precisa 
+                    de mais etanol para percorrer a mesma distância. O fator 0,7 leva essa diferença em consideração.
+                </p>
+                
+                <h5 class="mt-4">Exemplo prático:</h5>
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <p><strong>Gasolina:</strong> R$ 5,50</p>
+                        <p><strong>Etanol:</strong> R$ 3,80</p>
+                        <p><strong>Cálculo:</strong> 5,50 ÷ 3,80 = 1,447</p>
+                        <p><strong>Resultado:</strong> Como 1,447 > 0,7, a gasolina não compensa. Neste caso, o etanol seria a melhor opção!</p>
+                    </div>
+                </div>
+                
+                <div class="mt-4 text-center">
+                    <a asp-controller="Home" asp-action="Index" class="btn btn-primary">
+                        ⬅️ Voltar à Calculadora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

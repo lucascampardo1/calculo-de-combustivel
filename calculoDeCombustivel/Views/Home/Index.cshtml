@@ -1,0 +1,89 @@
+@model calculoDeCombustivel.Models.CombustivelModel
+@{
+    ViewData["Title"] = "Calculadora de Combustível";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <h2 class="card-title mb-0">⛽ Calculadora de Combustível</h2>
+                <small class="text-light">Descubra qual combustível compensa mais!</small>
+            </div>
+            <div class="card-body">
+                <form asp-action="Index" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label asp-for="Gasolina" class="form-label"></label>
+                                <div class="input-group">
+                                    <span class="input-group-text">R$</span>
+                                    <input asp-for="Gasolina" class="form-control" step="0.01" placeholder="Ex: 5.50" />
+                                </div>
+                                <span asp-validation-for="Gasolina" class="text-danger"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label asp-for="Etanol" class="form-label"></label>
+                                <div class="input-group">
+                                    <span class="input-group-text">R$</span>
+                                    <input asp-for="Etanol" class="form-control" step="0.01" placeholder="Ex: 3.80" />
+                                </div>
+                                <span asp-validation-for="Etanol" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg px-5">
+                            <i class="fas fa-calculator"></i> Calcular
+                        </button>
+                    </div>
+                </form>
+                
+                @if (!string.IsNullOrEmpty(Model.Resultado))
+                {
+                    <div class="mt-4">
+                        <div class="alert @(Model.Indice < 0.7m ? "alert-success" : "alert-warning") alert-dismissible fade show" role="alert">
+                            <h4 class="alert-heading">Resultado:</h4>
+                            <p class="mb-0"><strong>@Model.Resultado</strong></p>
+                            <hr>
+                            <small class="mb-0">
+                                Índice calculado: <strong>@Model.Indice?.ToString("F3")</strong>
+                                <br>
+                                <em>Se o índice for menor que 0,700, o etanol compensa mais.</em>
+                            </small>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        
+        <div class="mt-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">💡 Como funciona?</h5>
+                    <p class="card-text">
+                        O cálculo é simples: dividimos o preço da gasolina pelo preço do etanol.
+                        Se o resultado for <strong>menor que 0,7</strong>, o etanol é mais vantajoso.
+                        Se for <strong>maior ou igual a 0,7</strong>, a gasolina compensa mais.
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">
+                            Essa regra é baseada no fato de que o etanol tem aproximadamente 30% menos energia que a gasolina.
+                        </small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

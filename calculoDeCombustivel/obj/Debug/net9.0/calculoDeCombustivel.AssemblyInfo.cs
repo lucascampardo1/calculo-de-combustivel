@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("calculoDeCombustivel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb5ba56f3316b997aeea6f90e082a5ad067df48d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("calculoDeCombustivel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("calculoDeCombustivel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
